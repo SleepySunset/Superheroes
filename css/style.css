@@ -11,7 +11,8 @@
 }
 
 .encabezado{
-    position: fixed;
+    position: sticky;
+    top: 0;
     background-color: #00669F;
     box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);
     height: 80px;
@@ -29,7 +30,7 @@
 }
 
 .contenedor-vacio{
-    height: 200px;
+    height: 100px;
 }
 
 .contenedor{
@@ -44,6 +45,7 @@
     display: flex;
     flex-direction: column;
     width: 300px;
+    margin: 0 20px;
 }
 
 .contenedor-ruptura{
@@ -85,6 +87,7 @@
     flex-direction: column;
     background-color: #F3F3F3;
     justify-content: center;
+    
     box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.2);
 
 }
@@ -122,20 +125,17 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-@media (max-width : 1024px) {
+@media (max-width : 1200px) {
 
     .contenedor{
-        display:flex;
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
         align-content: center;
     }
     
     .card{
-        margin-bottom: 60px;
+        margin-bottom: 70px;
         align-self: center;
     }
     
-    .contenedor-vacio{
-        height: 130px;
-    }
 }
